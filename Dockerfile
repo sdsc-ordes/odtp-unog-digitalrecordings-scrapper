@@ -1,12 +1,12 @@
 FROM ubuntu:22.04
 
-LABEL maintainer="Your Name <your.email@example.com>"
+LABEL maintainer="Carlos Vivar Rios <carlos.vivarrios@epfl.ch>"
 LABEL version="v0.0.1"
-LABEL description="ODTP component based on Ubuntu 22.04"
-LABEL org.opencontainers.image.title="ODTP Component"
-LABEL org.opencontainers.image.vendor="Your Organization"
-LABEL org.opencontainers.image.source="https://github.com/your-org/your-repo"
-LABEL org.opencontainers.image.licenses="XXX"
+LABEL description="ODTP component in order to scrap information from unog"
+LABEL org.opencontainers.image.title="odtp-unog-digitalrecordings-scrapper"
+LABEL org.opencontainers.image.vendor="SDSC"
+LABEL org.opencontainers.image.source="https://github.com/sdsc-ordes/odtp-unog-digitalrecordings-scrapper"
+LABEL org.opencontainers.image.licenses="AGPL-3.0"
 
 ##################################################
 # Ubuntu setup
