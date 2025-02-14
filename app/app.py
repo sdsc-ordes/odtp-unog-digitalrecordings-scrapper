@@ -257,7 +257,7 @@ def fetch_and_save_meetings(start_date, end_date, output_file, output_folder, or
                 if "session_info" in meeting:
                     session_info = meeting["session_info"]
                     if "recording_url" in session_info:
-                        folder_name = session_info["recording"]["startdate"] + 'T' + ''.join(session_info["recording"]["starttime"].split(":")[:2])
+                        folder_name = "HRC_" + session_info["recording"]["startdate"] + 'T' + ''.join(session_info["recording"]["starttime"].split(":")[:2])
                         meeting_output_dir = f"/{output_folder}/{folder_name}"
                         recording_url = session_info["recording_url"]
                         print(f"Downloading recording for {recording_url}")

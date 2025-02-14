@@ -38,7 +38,7 @@ In order to add this component to your ODTP CLI, you can use. If you want to use
 ``` bash
 odtp new odtp-component-entry \
 --name odtp-unog-digitalrecordings-scrapper \
---component-version v0.0.1 \
+--component-version v1.0.0 \
 --repository https://github.com/odtp-org/odtp-unog-digitalrecordings-scrapper 
 ```
 
@@ -68,6 +68,7 @@ No inputs files
 | File/Folder | Description | File Type | Contents | Usage |
 | --- | --- | --- | --- | --- |
 | XXXX.jsonl | JSON Lines file containing the fetched UNHRC meetings data | JSONL | Meeting data in JSON Lines format | Defined by the OUTPUT_FILE parameter |
+| Recording Folder | A folder containing the recordings and metadata | Multiple |  |  |
 
 ## Tutorial
 
@@ -137,6 +138,3 @@ docker run -it --rm \
 SDSC
 
 This component has been created using the `odtp-component-template` `v0.5.0`. 
-
-
-docker run -it --rm --env-file .env --entrypoint bash odtp-unog-digitalrecordings-scrapper
