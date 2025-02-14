@@ -99,7 +99,23 @@ docker run -it --rm \
 -v {PATH_TO_YOUR_OUTPUT_VOLUME}:/odtp/odtp-output \
 -v {PATH_TO_YOUR_LOGS_VOLUME}:/odtp/odtp-logs \
 -v {PATH_TO_YOUR_APP_FOLDER}:/odtp/app \
---env-file .env odtp-unog-digitalrecordings-scrapper
+--env-file .env \
+--entrypoint bash odtp-unog-digitalrecordings-scrapper
+```
+
+``` powershell
+docker run -it --rm `
+-v ${PWD}/odtp-input:/odtp/odtp-input `
+-v ${PWD}/odtp-output:/odtp/odtp-output `
+-v ${PWD}/odtp-logs:/odtp/odtp-logs `
+--env-file .env `
+--entrypoint bash odtp-unog-digitalrecordings-scrapper
+```
+
+The you can run the following in order to simulate one iteration of the component:
+
+``` bash
+bash /odtp/odtp-component-client/startup.sh
 ```
 
 ### Running in API Mode
@@ -114,6 +130,7 @@ docker run -it --rm \
 -p {HOST_PORT}:{CONTAINER_PORT} \
 --env-file .env odtp-unog-digitalrecordings-scrapper
 ```
+
 
 ## Credits and references
 
