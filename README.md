@@ -1,8 +1,8 @@
 # odtp-unog-digitalrecordings-scrapper
 
-Add here your badges:
-[![Launch in your ODTP](https://img.shields.io/badge/Launch%20in%20your-ODTP-blue?logo=launch)](http://localhost:8501/launch-component)
-[![Compatible with ODTP v0.5.x](https://img.shields.io/badge/Compatible%20with-ODTP%20v0.5.0-green)]("")
+> ![!WARNING]
+> This ODTP component is provided solely for educational and research purposes. It has been developed as part of a collaborative research project between SDSC and Geneva University under an agreement with UNHRC. Use of this tool is subject to compliance with the terms of use established by the United Nations in their platform. SDSC, Geneva University, and UNHRC assume no responsibility or liability for any misuse or unintended consequences arising from its use.
+
 
 > [!NOTE]  
 > This repository makes use of submodules. Therefore, when cloning it you need to include them.
